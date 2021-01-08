@@ -1,0 +1,57 @@
+/* h1 {
+  color: white;
+  background-color: black;
+} */
+
+body {
+  background-color: #2A2D87;
+}
+
+@font-face {
+  font-family: 'TypeWriter';
+  src: url('./fonts/AmericanTypewriter.ttf');
+  font-style: normal;
+}
+.title {
+  color:rgb(241, 241, 205);
+  opacity: 95%;
+  font-size: 80px;
+  text-align: center;
+  font-family: TypeWriter;
+
+}
+
+.search-bar{
+  position: absolute;
+  left: 380px;
+  height: 40px;
+  width: 500px;
+  border-radius: 20px;
+  background-color:rgb(241, 241, 205);
+  color: rgb(99, 99, 99);
+  font-size: 15px;
+  font-family: TypeWriter;
+}
+
+.Results {
+  position: absolute;
+  left: 380px;
+  top: 300px;
+  background-color: rgb(241, 241, 205);
+  height: 300px;
+  width: 500px;
+  overflow: scroll;
+  border-radius: 20px;
+}
+
+.result-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  font-family: TypeWriter;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+}
