@@ -55,3 +55,27 @@ body {
   border-color: grey;
   border-radius: 10px;
 }
+
+.search-button {
+  position: absolute;
+  left: 580px;
+  top: 260px;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(211, 19, 195);
+  border-radius: 20px;
+  font-family: TypeWriter;
+  color: white;
+}
+
+.load-more {
+  position: absolute;
+  left: 580px;
+  top: 620px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(211, 19, 195);
+  border-radius: 20px;
+  font-family: TypeWriter;
+  color: white;
+}

@@ -29,7 +29,8 @@ const App = () => {
         Historical Events
         </h1>
       <SearchBar handleResults={handleResults} />
-      <Results results={results}/>
+      <Results results={results}
+      />
     </>
   );
 }

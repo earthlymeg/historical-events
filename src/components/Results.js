@@ -1,10 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
 
 const Results = (props) => {
-    return (
     
+    
+    const [showButton, setshowButton] = useState(false);
+    
+    const handleShow = () => {
+        if (props.results.length > 0) {
+            setshowButton(true);
+        }
+    }
+    
+    useEffect( () => {
+        handleShow()
+        console.log(props)
+    })
+    
+    const handleLoadMore = () => {
+        alert('Eventually, I will code this to load more results :)')
+    }
+  
+
+    return (
+        <div>
         <div className="Results">
-            {console.log(props.results)}
             {
                 props.results.length > 0 &&
                 props.results.map( (item) => {
@@ -16,6 +36,9 @@ const Results = (props) => {
                        </div>
                 })
             }
+        </div>
+        {showButton ? <button onClick={handleLoadMore} className='load-more'>Load More Results </button> : null}
+            
         </div>
     );
 };

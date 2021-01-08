@@ -26,7 +26,7 @@ return (
                     onChange={handleSearch}
                 />
             </label>
-            <button onClick={test}>Click Me</button>
+            <button className="search-button" onClick={test}>Search!</button>
         </form>
     </div>
 );
